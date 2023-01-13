@@ -12,12 +12,12 @@ adb = r"scrcpy/scrcpy-win64-v1.25/adb.exe"
 nikkegui = Tk()
 nikkegui.resizable(False, False)
 nikkegui.title("NikkeGui")
-nikkegui.geometry("300x400")
+nikkegui.geometry("400x500")
 
 
 
 NikkeFrame = LabelFrame(nikkegui, text="Options")
-NikkeFrame.grid(column=0, row=0, padx=30, pady=20,)
+NikkeFrame.grid(column=0, row=0, padx=100, pady=100,)
 
 #RunEmulation
 RM = tkinter.IntVar()
@@ -34,11 +34,6 @@ SAR = tkinter.IntVar()
 SendAndRequest = Checkbutton(NikkeFrame, text="SendAndRequest", variable=SAR)
 SendAndRequest.pack()
 
-#Dispatch Nikke
-DIS = tkinter.IntVar()
-Dispatch = Checkbutton(NikkeFrame, text="Dispatch",variable=DIS)
-Dispatch.pack
-
 #Claim Outpost
 CLAIM = tkinter.IntVar()
 Claim = Checkbutton(NikkeFrame, text="Claim Outpost", variable=CLAIM)
@@ -48,6 +43,11 @@ Claim.pack()
 SALE = tkinter.IntVar()
 Sale = Checkbutton(NikkeFrame, text="Buy Sale Items", variable=SALE)
 Sale.pack()
+
+#Dispatch Nikke
+DIS = tkinter.IntVar()
+Dispatch = Checkbutton(NikkeFrame, text="Dispatch",variable=DIS)
+Dispatch.pack()
  
 #Arena
 ARENA = tkinter.IntVar()
@@ -62,8 +62,6 @@ Spea.pack()
 def runmirroring():
     if RM.get() :
         process = subprocess.Popen(r"scrcpy\scrcpy-win64-v1.25\scrcpy.exe")
-        subprocess.run([adb, "start-server"])
-        time.sleep(5)
     else:
         print("")
 
