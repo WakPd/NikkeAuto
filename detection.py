@@ -30,8 +30,33 @@ def home():
     time.sleep(2)
     pyautogui.click(home)
 
+def ark():
+    #Ark Button
+    ark = pyautogui.locateCenterOnScreen(r"utils\img\ark.png", confidence=.8)
+    print("Searching for ark button.")
+    while ark == None:
+        ark = pyautogui.locateCenterOnScreen(r"utils\img\ark.png", confidence=.8)
+        print("Searching for ark button.")
+        time.sleep(2)
+    print("Ark button find at", ark)
+    pyautogui.moveTo(ark)
+    time.sleep(2)
+    pyautogui.click(ark)
+
+def arena():
+    arenaark = pyautogui.locateOnScreen(r"utils\img\arena.png", confidence=.8)
+    print(arenaark)
+    while arenaark == None:
+        arenaark = pyautogui.locateOnScreen(r"utils\img\arena.png", confidence=.8)
+        print(arenaark)
+    print(arenaark)
+    pyautogui.moveTo(arenaark)
+    time.sleep(2)
+    pyautogui.click()
+    pyautogui.click()
+
 def rung():
-#Enter Game Button
+    #Enter Game Button
     print("Running Nikke to Lobby")
     entr = pyautogui.locateCenterOnScreen(r"utils\img\entr.png", confidence=.8)
     print("Searching for enter button.")
@@ -47,33 +72,15 @@ def rung():
 
 def arkarena():
     #ArkArena Button
-    ark = pyautogui.locateCenterOnScreen(r"utils\img\ark.png", confidence=.8)
-    print("Searching for ark button.")
-    while ark == None:
-        ark = pyautogui.locateCenterOnScreen(r"utils\img\ark.png", confidence=.8)
-        print("Searching for ark button.")
-        time.sleep(2)
-    print("Ark button find at", ark)
-    pyautogui.moveTo(ark)
-    time.sleep(2)
-    pyautogui.click(ark)
-    arenaark = pyautogui.locateOnScreen(r"utils\img\arena.png", confidence=.8)
-    print(arenaark)
-    while arenaark == None:
-        arenaark = pyautogui.locateOnScreen(r"utils\img\arena.png", confidence=.8)
-        print(arenaark)
-    print(arenaark)
-    pyautogui.moveTo(arenaark)
-    time.sleep(2)
-    pyautogui.click()
-    pyautogui.click()
-    spea = pyautogui.locateOnScreen(r"utils\img\normal.png", confidence=.8)
-    print(spea)
-    while spea == None:
-        spea = pyautogui.locateOnScreen(r"utils\img\normal.png", confidence=.8)
-        print(spea)
-    print(spea)
-    pyautogui.moveTo(spea)
+    ark()
+    arena()
+    normal = pyautogui.locateOnScreen(r"utils\img\normal.png", confidence=.8)
+    print(normal)
+    while normal == None:
+        normal = pyautogui.locateOnScreen(r"utils\img\normal.png", confidence=.8)
+        print(normal)
+    print(normal)
+    pyautogui.moveTo(normal)
     pyautogui.click()
     pyautogui.click()
     rka = pyautogui.locateOnScreen(r"utils\img\rookiea.png", confidence=.8)
@@ -205,23 +212,8 @@ def arkarena():
     home()
 
 def arkspecialarena():
-    ark = pyautogui.locateOnScreen(r"utils\img\ark.png", confidence=.8)
-    print(ark)
-    while ark == None:
-        ark = pyautogui.locateOnScreen(r"utils\img\ark.png", confidence=.8)
-        print(ark)
-    print(ark)
-    pyautogui.moveTo(ark)
-    pyautogui.click()
-    arenaark = pyautogui.locateOnScreen(r"utils\img\arena.png", confidence=.8)
-    print(arenaark)
-    while arenaark == None:
-        arenaark = pyautogui.locateOnScreen(r"utils\img\arena.png", confidence=.8)
-        print(arenaark)
-    print(arenaark)
-    pyautogui.moveTo(arenaark)
-    pyautogui.click()
-    pyautogui.click()
+    ark()
+    arena()
     spea = pyautogui.locateOnScreen(r"utils\img\special.png", confidence=.8)
     print(spea)
     while spea == None:
