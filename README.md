@@ -15,3 +15,6 @@ You need to pass your devices serial key in config.txt ( open command prompt in 
 
 
 Don't hesitate to contact me over discord : Wak#1166
+
+
+I recommend you to use Modernia as the character in lobby for some comparison issues.
