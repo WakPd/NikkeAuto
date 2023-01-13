@@ -6,7 +6,7 @@ import os
 
 def lobby():
     #Lobby Button Detection
-    lobby = pyautogui.locateCenterOnScreen(r"utils\img\lobby.png", confidence=.8)
+    lobby = pyautogui.locateCenterOnScreen(r"utils\img\lobby.png" or r"utils\img\lobby2.png", confidence=.8)
     print("Searching for lobby button.")
     while lobby == None:
         lobby = pyautogui.locateCenterOnScreen(r"utils\img\lobby.png", confidence=.8)
