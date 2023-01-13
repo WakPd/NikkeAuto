@@ -13,8 +13,7 @@ You need to have your windows with the game open on your main screen to make thi
 
 You need to pass your devices serial key in config.txt ( open command prompt in scrcpy-win64-v1.25 and type "adb devices", make sure your emulator or devices is connected with usb and have developper mod with usb debugging enabled and for some devices permission to receive input mocks from debugging).
 
+I recommend you to use Modernia as the character in lobby for some comparison issues.
+
 
 Don't hesitate to contact me over discord : Wak#1166
-
-
-I recommend you to use Modernia as the character in lobby for some comparison issues.
