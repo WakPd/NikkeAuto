@@ -1,4 +1,4 @@
-# NikkePCAuto
+# NikkeAuto
 
 
 About to rebuild this project for the Nikke PC Version since its smoother.
